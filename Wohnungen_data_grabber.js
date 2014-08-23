@@ -5,21 +5,8 @@
  * Time: 2:33 PM
  * To change this template use File | Settings | File Templates.
  */
-/**
- * Retrieves all the rows in the active spreadsheet that contain data and logs the
- * values for each row.
- * For more information on using the Spreadsheet API, see
- * https://developers.google.com/apps-script/service_spreadsheet
- */
 function getData() {
-  var sheet = SpreadsheetApp.getActiveSheet();
-  var rows = sheet.getDataRange();
-  var numRows = rows.getNumRows();
-  var values = rows.getValues();
-  for (var i = 0; i <= numRows - 1; i++) {
-    var row = values[i];
-    Logger.log(row);
-  }
+  var sheet = SpreadsheetApp.getActiveSheet();  
 
   var whonungen_website = "http://www.studentenwerk-berlin.de/wohnen/studentische_wohnanlagen/"
   var response = UrlFetchApp.fetch(whonungen_website + "index.html").getContentText();
