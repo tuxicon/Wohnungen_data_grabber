@@ -82,5 +82,5 @@ function onOpen(e) {
       functionName: "getData"
     }
   ];
-  sheet.addMenu("Whonungen Data Grabber", entries);
+  sheet.addMenu("wohnungen data grabber", entries);
 };
