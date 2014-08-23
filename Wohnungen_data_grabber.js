@@ -26,7 +26,7 @@ function getData() {
   var htmlDoc = Xml.parse(response, true);
   var wrapperElements = htmlDoc.getElement().getElement("body").getElement("div").getElements()[0].getElements()[0].getElements()[1].getElements()[0].getElements()[6].getElements();
 
-  var columnNames = ["Area", "House Name", "Address", "Type of apartment", "Num of rooms available.", "Number of rooms free", "Number of adults", "Number of kids", "Size", "Rent", "Waiting time", "Free from"];
+  var columnNames = ["Area", "House Name", "Address", "Type of apartment", "Num of rooms available.", "Number of rooms vacant", "Number of adults", "Number of kids", "Size", "Rent", "Waiting time", "Free from"];
   sheet.clear({ formatOnly: true, contentsOnly: true });
   sheet.appendRow(columnNames);
 
