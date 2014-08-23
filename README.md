@@ -5,7 +5,7 @@ A data scrapper written with Google app script. Currently pulls data on room ava
 
 ## Instructions for installing the script
 
-1. Open any new google doc spreadsheet. Select tools and then script editor.
+1. Open any new google doc spreadsheet. Select menu item - tools and then script editor.
 2. This opens a new tab with a menu asking for the type of script. Select spreadsheet. 
 3. Now, in the code editor, copy paste all the code from wohnungen_data_grabber.js. Press ctrl+s to save. 
 4. Give a name to the project in subsequent dialog that appears. 
